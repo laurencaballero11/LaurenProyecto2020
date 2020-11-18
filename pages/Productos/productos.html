@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Majestic Admin</title>
+  <!-- plugins:css -->
+  <link rel="stylesheet" href="../../css/fontawesome-free/css/all.min.css">
+  <link rel="stylesheet" href="../../vendors/mdi/css/materialdesignicons.min.css">
+  <link rel="stylesheet" href="../../vendors/base/vendor.bundle.base.css">
+  <!-- endinject -->
+  <!-- inject:css -->
+  <link rel="stylesheet" href="../../css/style.css">
+  <!-- endinject -->
+  <link rel="shortcut icon" href="../../images/favicon.png" />
+  </head>
+
+<body>
+  <div class="container-scroller">
+    <!-- partial:../../partials/_navbar.html -->
+    
+    <!-- partial -->
+    <div class="container-fluid page-body-wrapper">
+      
+      <div data-include="../contenidos/menu"></div>
+
+
+      <div class="main-panel">
+        <div class="content-wrapper">
+          <div class="row">
+            <div class="col-lg-12 grid-margin stretch-card">
+              <div class="card">
+                <div class="card-body">
+                  <h4 class="card-title">Productos
+
+                    <span>
+                      <div class="float-right"> 
+                        <button type="button" id="btncrear" class="btn btn-outline-secondary btn-rounded btn-icon">
+                          <i class="fa fa-cart-plus"></i>                          
+                        </button>
+                       </div> 
+                    </span>
+
+                  </h4>
+
+                  <table class="table ">
+                    <thead>
+                      <tr>
+                        <th scope="col">#</th>
+                        <th scope="col">Nombre</th>
+                        <th scope="col">Abreviatura</th>
+                        <th scope="col">Precio</th>
+                        <th scope="col">Costo</th>
+                        <th scope="col">Descripcion</th>
+                        <th scope="col">Proveedor</th>
+                        <th scope="col">Telefono Proveedor</th>
+                        <th scope="col">Acciones</th>
+                      </tr>
+                    </thead>
+
+                    <tbody>
+
+
+                    </tbody>
+                  </table>
+
+
+                </div>
+                <br>
+                
+                <div class="col-12 grid-margin stretch-card" id='conten-crear'>
+                  <div class="card">
+                      <div class="card-body">
+                        <h4 class="card-title">Crear</h4>
+    
+                        <form id="formcrear" class="forms-sample">
+      
+                          <div class="form-group">
+                            <label for="inputnombre" >Nombre</label>
+                              <input type="text" class=" form-control" id="inputnombre">
+                          </div>
+    
+                          <div class="form-group">
+                            <label for="inputnombre" >Abreviatura</label>
+                              <input type="text" class=" form-control" id="inputAbreviatura">
+                          </div>
+      
+                          <div class="form-group">
+                            <label for="inputsexo" class="col-form-label">Precio</label>
+                              <input type="number" class=" form-control" id="inputPrecio">
+                          </div>
+      
+                          <div class="form-group">
+                            <label for="inputedad" class=" col-form-label">Costo</label>
+                              <input type="number" class=" form-control" id="inputCosto">
+                          </div>
+    
+                          <div class="form-group">
+                            <label for="inputedad" class=" col-form-label">Descripcion</label>
+                              <input type="text" class=" form-control" id="inputDescripcion">
+                          </div>
+    
+                          <div class="form-group">
+                            <label for="inputedad" class=" col-form-label">Proveedor</label>
+                              <input type="text" class=" form-control" id="inputProveedor">
+                          </div>
+    
+    
+                          <div class="form-group">
+                            <label for="inputedad" class=" col-form-label">Telefono Proveedor</label>
+                              <input type="number" class=" form-control" id="inputcel_proveedor">
+                          </div>
+    
+                          <div class="float-right">
+                            <input type="submit" value="Guardar"  class='btn btn-primary'>
+                            <input type="button" id="btncancel" class="btn btn-danger" value="Cancelar">
+                          </div>
+                          
+                        </form>
+                      </div>
+                    </div>
+                </div>
+    
+                <div class="col-12 grid-margin stretch-card" id='conten-editar'>
+                  <div class="card">
+                      <div class="card-body">
+                        <h4 class="card-title">Editar</h4>
+    
+                        <form id="formEditar" class="forms-sample">
+      
+                          <div class="form-group">
+                            <label for="inputnombre" >Nombres</label>
+                              <input type="text" class=" form-control" id="inputnombreEdit">
+                          </div>
+    
+                          <div class="form-group">
+                            <label for="inputnombre" >Abreviatura</label>
+                              <input type="text" class=" form-control" id="inputAbreviaturaEdit">
+                          </div>
+      
+                          <div class="form-group">
+                            <label for="inputsexo" class="col-form-label">Precio</label>
+                              <input type="number" class=" form-control" id="inputPrecioEdit">
+                          </div>
+      
+                          <div class="form-group">
+                            <label for="inputedad" class=" col-form-label">Costo</label>
+                              <input type="number" class=" form-control" id="inputCostoEdit">
+                          </div>
+    
+                          <div class="form-group">
+                            <label for="inputedad" class=" col-form-label">Descripcion</label>
+                              <input type="text" class=" form-control" id="inputDescripcionEdit">
+                          </div>
+    
+                          <div class="form-group">
+                            <label for="inputedad" class=" col-form-label">Proveedor</label>
+                              <input type="text" class=" form-control" id="inputProveedorEdit">
+                          </div>
+    
+                          <div class="form-group">
+                            <label for="inputedad" class=" col-form-label">Telefono Proveedor</label>
+                              <input type="number" class=" form-control" id="inputcel_proveedorEdit">
+                          </div>
+    
+                          
+    
+                          <div class="float-right">
+                            <input type="submit" value="Guardar"  class='btn btn-primary'>
+                            <input type="button" id="btncanceledit" class="btn btn-danger" value="Cancelar">
+                          </div>
+                          
+                        </form>
+                      </div>
+                    </div>
+                </div>
+                
+
+              </div>
+            </div>
+
+           
+            </div>
+           
+          </div>
+
+
+
+
+         
+          </div>
+        </div>
+        <!-- content-wrapper ends -->
+        <!-- partial:../../partials/_footer.html -->
+        
+        <!-- partial -->
+      </div>
+      <!-- main-panel ends -->
+    </div>
+    <!-- page-body-wrapper ends -->
+  </div>
+  <!-- container-scroller -->
+  <!-- plugins:js -->
+  <script src="../../vendors/base/vendor.bundle.base.js"></script>
+  <!-- endinject -->
+  <!-- Plugin js for this page-->
+  <script src="../../vendors/chart.js/Chart.min.js"></script>
+  <!-- End plugin js for this page-->
+  <!-- inject:js -->
+  <script src="../../js/off-canvas.js"></script>
+  <script src="../../js/hoverable-collapse.js"></script>
+  <!-- endinject -->
+  <!-- Custom js for this page-->
+  <script src="../../js/chart.js"></script>
+  <!-- End custom js for this page-->
+
+  <script src="../contenidos/menu.js"></script>
+  <script src="../../js/ConexionServ.js"></script>
+  <script src="productos.js"></script>
+  <script src="../../css/fontawesome-free/fontawesome-free/css/all.css"></script>
+</body>
+
+</html>
